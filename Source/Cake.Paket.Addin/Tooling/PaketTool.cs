@@ -61,7 +61,7 @@ namespace Cake.Paket.Addin.Tooling
         protected sealed override IEnumerable<FilePath> GetAlternativeToolPaths(TSettings settings)
         {
             var path = Resolver.ResolvePath();
-            return path != null ? new[] { path } : Enumerable.Empty<FilePath>();
+            return new[] { path };
         }
     }
 }
